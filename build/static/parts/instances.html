@@ -1,0 +1,24 @@
+          <div class="container">
+            <div class="row">
+              <div class="col-8">
+                <h2>Lista dodanych problemów:</h2>
+              </div>
+              <div class="col-4 align-right">
+                  <a href="/page/#/instance_add"><button class="btn btn-info">Dodaj nowy</button></a>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-12 margin20" ng-repeat="x in instances">
+                <div class="card">
+                  <div class="card-header">{{x.title}} - <b>{{x.id}}</b></div>
+                  <div class="card-body">
+                    <h5 class="card-title">Liczba miast: {{x.cityCount}}</h5>
+                    <pre>{{x.graph}}</pre>
+                    <!--<button ng-click="makeTask(x.id)" class="btn btn-primary">Uruchom zadanie</button> &nbsp;
+                    <button ng-click="delInstance(x.id)" class="btn btn-danger">Usuń problem</button>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>

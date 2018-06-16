@@ -1,0 +1,26 @@
+.margin50 {
+  margin-bottom: 50px;
+}
+
+.margin20 {
+  margin-bottom: 20px;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.fas {
+  font-size: 80px;
+  margin-bottom: 20px;
+  color: #C86CA2;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card b {
+  font-size: 220%;
+  margin-left: 5px;
+}

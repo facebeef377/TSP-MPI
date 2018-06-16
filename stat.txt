@@ -1,0 +1,12 @@
+Wczytano - liczba wierzcholkow: 280
+
+Metoda mutacji: zamiana wierzcholkow
+Wczytano - liczba wierzcholkow: 280
+
+Metoda mutacji: zamiana wierzcholkow
+Wczytano - liczba wierzcholkow: 280
+Wczytano - liczba wierzcholkow: 280
+
+
+Metoda mutacji: zamiana wierzcholkow
+Metoda mutacji: zamiana wierzcholkow

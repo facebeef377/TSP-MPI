@@ -1,0 +1,32 @@
+<div class="container-fluid">
+          <h2>Historia rozwiązań</h2>
+          <hr />
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nazwa problemu</th>
+                <th scope="col">Ilość miast</th>
+                <th scope="col">Dlugosc rozwiązania</th>
+                <th scope="col">Czas wykonywania algorytmu</th>
+                <th scope="col">Wielkosc populacji</th>
+                <th scope="col">Prawdopodobieństwo krzyżowania (Procent)</th>
+                <th scope="col">Prawdopodobieństwo mutacji (Procent)</th>
+                <th scope="col">Ilość procesów</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="x in history">
+                <th>{{x.id}}</th>
+                <th>{{x.title}}</th>
+                <th>{{x.cityCount}}</th>
+                <th>{{x.graph}}</th>
+                <th>{{x.time}}</th>
+                <th>{{x.population}}</th>
+                <th>{{x.generations}}</th>
+                <th>{{x.wpz}}</th>
+                <th>{{x.proc}}</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>

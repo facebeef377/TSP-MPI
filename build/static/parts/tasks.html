@@ -1,0 +1,52 @@
+<div class="container">
+            <div class="row">
+              <div class="col-8">
+                <h2>Lista dodanych zadań:</h2>
+              </div>
+              <div class="col-4 align-right">
+                <Link to="/new_problem">
+                  <a href="/page/#/task_add"><button class="btn btn-info">Dodaj nowe</button></a>
+                </Link>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-12">
+                <div class="col-12 margin20" ng-repeat="x in tasks">
+                  <div class="card">
+                    <div class="card-header">{{x.title}}</div>
+                    <div class="card-body">
+                        <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">ID Instancji</th>
+                            <th scope="col">Wielkosc populacji</th>
+                            <th scope="col">Prawdopodobieństwo krzyżowania (Procent)</th>
+                            <th scope="col">Prawdopodobieństwo mutacji (Procent)</th>
+                            <th scope="col">Ilość procesów</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>{{x.instance_id}}</th>
+                            <th>{{x.population}}</th>
+                            <th>{{x.generations}}</th>
+                            <th>{{x.wpz}}</th>
+                            <th>{{x.proc}}</th>
+                          </tr>
+                        </tbody>
+                        </table>
+                        <hr />
+                        <br />
+                        <div class="progress">
+                         <div class="progress-bar" role="progressbar" aria-valuenow="{{x.status}}"
+                         aria-valuemin="0" aria-valuemax="100" style="width:{{x.status}}%">
+                           <span class="sr-only">{{x.status}}%</span>
+                         </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>

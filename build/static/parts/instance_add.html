@@ -1,0 +1,24 @@
+<div class="container">
+          <h2>Panel dodawania problemu</h2>
+          <p>Możesz dodać swój problem manualnie lub skorzystać z bloku uploadu plików.</p>
+          <hr />
+          <div class="row">
+            <div class="col-12 margin20">
+              <div class="form-group">
+                <label>Nazwa problemu</label>
+                <input type="text" id="title" ng-model="new_instance.title" class="form-control" />
+              </div>
+              <div class={"form-group"}>
+                <label>Ilość miast</label>
+                <input type="text" id="cityCount" ng-model="new_instance.cityCount" class="form-control" value="99"/>
+              </div>
+            </div>
+            <div class="col-12 margin20">
+              <h5>Wpisz TSPLib</h5>
+              <textarea id="graph" class="form-control" ng-model="new_instance.graph" rows="10"></textarea>
+            </div>
+            <div class="col-12 margin20">
+              <button ng-click="add_instance()" class="btn btn-info">Dodaj</button>
+            </div>
+          </div>
+        </div>

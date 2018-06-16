@@ -1,0 +1,52 @@
+<html lang="pl">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="theme-color" content="#000000">
+      <title>Problem komiwojazera</title>
+
+
+      <!--JS-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+
+      <!--Bootstrap-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/sweetalert2@7.22.0/dist/sweetalert2.all.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+      {% load static %}
+      <link rel="stylesheet" href="{% static "css/style.css" %}">
+      <script src="{% static "js/app.js" %}"></script>
+    <!--  <script src="{% static "js/router.js" %}"></script> -->
+    <!--  <script src="js/app.js"></script>
+      <script src="js/config.js"></script>
+      <script src="js/router.js"></script>  -->
+
+    </head>
+    <body ng-app="app" ng-controller="appController" ng-init="initVars()">
+        {% verbatim %}
+        <nav class="navbar navbar-expand-lg navbar-light bg-light margin50">
+          <a href="/page/#/start" ng-click="getData_start()" class="navbar-brand">TSP Solver</a>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="/page/#/instances" ng-click="getData_instances()" class="nav-link">Instancje</a>
+              </li>
+              <li class="nav-item">
+                <a href="/page/#/tasks" class="nav-link">Zadania</a>
+              </li>
+              <li class="nav-item">
+                <a href="/page/#/history" ng-click="getData_history()" class="nav-link">Historia</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div ng-view></div>
+        {% endverbatim %}
+
+    </body>
+</html>
